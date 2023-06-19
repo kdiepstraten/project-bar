@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--PaleBlue);
+}
+
+:root {
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+}
+.dev {
+    border: 4px solid steelblue;
+}
+.dev2 {
+    border: 4px solid indianred;
+}
+html{
+    background-color: var(--VeryDarkBlue);
+    background-image: url("./assets/bg-desktop.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body{
+    Font-size: 14px;
+
+}
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.body-align-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--DarkBlue);
+    width: 300px;
+    height: 200px;
+    margin-bottom: 45px;
+    border-radius: 10px 100px 10px 10px;
+}
+.container-content{
+    margin-inline: 30px;
+}
+.container-figures {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--DarkBlue);
+    margin-inline: 20px;
+    margin-top: 10px;
+}
+.container-figures figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 10px 10px 10px 10px;
+}
+.figure-1 {
+    margin: 10px 10px 10px 0;
+}
+.container-figures figure img {
+  margin: 10px;
+}
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--DarkBlue);
+    border-radius: 10px 10px 10px 10px;
+    width: 450px;
+    height: 150px;
+    margin: 20px;
+}
+.bar p, input, div {
+    margin-inline: 30px;
+}
+.bar-text {
+    margin-block: 15px;
+}
+#gradient {
+    border-radius: 10px 10px 10px 10px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));;
+}
+.amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
